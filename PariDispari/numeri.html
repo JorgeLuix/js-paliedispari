@@ -9,7 +9,24 @@
     <title>PariDispari</title>
 </head>
 <body>
-    
+    <div class="contanier-fluid text-center mt-5 bg-warning bg-gradient">
+        <div class="border rounded-3 p-5">
+            <h1>Numeri Pari e Dispari</h1>
+	<form>
+		<div>
+			<label class="m-3 fs-4"><input type="radio" name="evenOdd" value="even" checked>Pari</label>
+			<label class="fs-4"><input type="radio" name="evenOdd" value="odd">Dispari</label>
+		</div>
+		<div>
+			<label class="fs-4" for="number">Sceglie un numero da 1 a 5 : </label>
+			<input class="border p-1 rounded-2" type="number" id="number" min="1" max="5" required>
+		</div>
+		<button class="btn btn-success" type="button">Vai</button>
+		<p id="result"></p>
+	</form>
+
+        </div>
+    </div>
     <script src="numeri.js"></script>
 </body>
 </html>
